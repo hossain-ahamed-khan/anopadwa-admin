@@ -61,6 +61,7 @@ export default function SignInPage() {
                     alt="Anopadwa - Wake up to New Opportunities"
                     width={200}
                     height={39}
+                    style={{ height: "auto" }}
                     priority
                 />
 
