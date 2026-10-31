@@ -319,20 +319,6 @@ export type AdminListingReport = {
     } | null;
 };
 
-type AdminReportsResponse = {
-    success: boolean;
-    data: { reports: AdminListingReport[] };
-    meta: { total: number; page: number; limit: number; totalPages: number };
-};
-
-type AdminReportActionResponse = {
-    success: boolean;
-    data: {
-        report: AdminListingReport;
-        message: string;
-    };
-};
-
 const adminApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getAdminDashboardOverview: builder.query<AdminDashboardOverview, void>({
